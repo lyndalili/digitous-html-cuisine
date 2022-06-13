@@ -1,54 +1,94 @@
-    .header-div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 80px;
-        border-bottom: solid 2px #f9f9f9;
-        position: relative;
-    }
-    
-    header nav {
-        display: flex;
-        gap: 20px;
-    }
-    
-    header a {
-        text-decoration: none;
-        color: black;
-        opacity: 0.5;
-    }
-    
-    header h1 {
-        font-style: italic;
-        color: #ffff;
-        font-size: 30px;
-    }
-    
-    header img {
-        width: 50px;
-    }
-    
-    .burger {
-        display: none;
-    }
-    /*covers*/
-    
-    .covers {
-        background-size: 100%;
-        background-image: url("./img/team/team.jpg");
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 0%;
-        bottom: 40%;
-    }
-    
-    .img-team {
-        border-radius: 50%;
-        width: 10%;
-    }
-    
-    .team-section {}
-    /*  @media (max-width: 768px) {
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;600&display=swap');
+.header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    border-bottom: solid 2px #f9f9f9;
+}
+
+header {
+    background-image: url("./img/team/team.jpg");
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+}
+
+header h1 {
+    font-style: italic;
+    color: #ffff;
+    font-size: 30px;
+}
+
+header img {
+    width: 50px;
+}
+
+.burger {
+    display: none;
+}
+
+.contenant {
+    position: relative;
+    text-align: center;
+    color: #ffff;
+}
+
+.texte_centrer {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+.texte_centrer span {
+    font-size: 1.5rem;
+}
+
+.contenant img {
+    width: 100%;
+    height: 600px;
+}
+
+
+/* Team Section*/
+
+.team-section {
+    padding: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px 0.5em;
+    justify-content: center;
+    align-content: center;
+}
+
+.img-team {
+    border-radius: 50%;
+    width: 35%;
+}
+
+.team-section h2 {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.team-section p {
+    opacity: 0.50;
+}
+
+
+/*  @media (max-width: 768px) {
        
         header {
             position: relative;
