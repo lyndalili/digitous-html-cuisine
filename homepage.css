@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@400;700&display=swap');
+font-family: 'Courgette', cursive;
+font-family: 'Oswald', sans-serif;
+
+body{
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: radial-gradient( rgb(49, 49, 49), rgba(2, 2, 3, 0.5)), url("img/header.jpg");
+}
+.title{
+    border-bottom: 1px solid rgb(105, 104, 104);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+h1{
+    font-family: 'Courgette', cursive;
+    font-size: 30px;
+}
+.presentation{
+    text-align: center;
+    padding: 80px 0px 150px 0px ;
+}
+h2{
+    font-family: 'Courgette', cursive;
+    font-size: 50px;
+}
+.presentation p{
+    font-size: 30px ;
+}
+.lastarticle{
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0px;
+}
+nav{
+    display: none;
+}
+.abo{
+    display: none;
+}
+main{
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.articles{
+    text-align: justify;
+    padding: 20px 5px;
+}
+h3{
+    font-family: 'Courgette', cursive;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px 0px;
+}
+.previewarticle{
+    padding: 30px 5px;
+    color: black;
+}
+.previewarticle a{
+    color: black;
+    text-decoration: none;
+}
+footer{
+    font-family: 'Oswald', sans-serif;    
+    display: flex;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    padding: 90px 15px 180px 25px;
+    gap: 20px;
+    font-size: 20px;
+    line-height: 150%;
+}
+.linkfooter{
+    color: white;
+}
+.social{
+    filter: invert(100%);
+}
+h5{
+    font-family: 'Courgette', cursive;
+    font-weight: bold;
+}
+h4{
+    font-family: 'Courgette', cursive;    
+}
+/* version tablette */
+@media (min-width: 778px){
+    header nav{
+        display: none;
+    }
+    main section{
+        display: flex;
+        flex-direction: column;
+    }
+    .articles{
+        display: flex;
+        flex-direction: row;
+    }
+    .detailarticle{
+        flex-direction: column;
+        padding-left: 30px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    .detailarticle p{
+        font-size: 20px;
+    }
+    .articles img{
+        width: 50%;
+    }
+    footer{
+        padding-left: 150px ;
+    }
+}
+/* version ordi */
+@media (min-width: 992px){
+        .title img{
+            display: none;
+    }
+    header nav{
+        display: block;
+        padding-top: 8px;
+    }
+    .title a{
+        color: white;
+        text-decoration: none;
+    }
+    main{
+        flex-direction: row;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .hdz{
+        flex-direction: row;
+    }
+    .central{
+        flex: 1;
+    }
+    aside{
+        display: block;
+        width: 200px;
+        padding-top: 100px;
+    }
+    .articles{
+        padding-right: 30px;
+    }
+    .abo{
+        display: block;
+        justify-content: center;    
+    }
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 60px 80px;
+    }
+}

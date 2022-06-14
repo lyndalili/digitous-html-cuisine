@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@400;700&display=swap');
+font-family: 'Courgette', cursive;
+font-family: 'Oswald', sans-serif;
+
+body{
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("img/articles/suzette/suzette-header.jpg");
+}
+.title{
+    border: 1px solid rgb(69, 69, 69);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: black;
+}
+h1{
+    font-family: 'Courgette', cursive;
+    font-size: 30px;
+}
+.presentation{
+    background-color: black;
+    text-align: center;
+    margin: 150px 40px;
+}
+h2{
+    font-family: 'Courgette', cursive;
+    font-size: 50px;
+}
+/* Main */
+.lastarticle{
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0px;
+}
+nav{
+    display: none;
+}
+.abo{
+    display: none;
+}
+main{
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+}
+.articles{
+    text-align: justify;
+    padding: 20px 5px;
+}
+h3{
+    font-family: 'Courgette', cursive;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 10px 0px;
+}
+.auteur{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    border-top: 1px solid rgb(211, 211, 211);
+    padding: 30px 0px;
+    line-height: 160%;
+}
+.auteur img{
+    border-radius: 50%;
+    padding-right: 20px;
+}
+h6{
+    font-family: 'Courgette', cursive;
+    font-weight: bold;
+    font-size: 25px;
+}
+.infos{
+    padding-top: 20px;
+    padding-bottom: 10%;
+}
+.infos input{
+    width: 100%;
+}
+footer{
+    font-family: 'Oswald', sans-serif;    
+    display: flex;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    padding: 90px 15px 180px 25px;
+    gap: 20px;
+    font-size: 20px;
+    line-height: 150%;
+}
+.linkfooter{
+    color: white;
+}
+.social{
+    filter: invert(100%);
+}
+h5{
+    font-family: 'Courgette', cursive;
+    font-weight: bold;
+}
+h4{
+    font-family: 'Courgette', cursive;    
+}
+.notice article{
+    display: flex;
+    flex-direction: row;
+}
+.notice img{
+    padding: 5px 20px;
+    width: 10%;
+}
+.haters{
+    justify-content: center;
+    filter: opacity(50%);
+}
+@media (min-width: 992px){
+    .title img{
+            display: none;
+    }
+    .articles{
+        flex: 1;
+        padding-left: 100px;
+    }
+    aside{
+        width: 200px;
+        padding-left: 20px;
+        padding-top: 30px;
+    }
+    header nav{
+        display: block;
+        padding-top: 8px;
+    }
+    .title a{
+        color: white;
+        text-decoration: none;
+    }
+    main{
+        flex-direction: row;
+    }
+    .abo{
+        display: block;
+    }
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 60px 80px;
+    }
+}
