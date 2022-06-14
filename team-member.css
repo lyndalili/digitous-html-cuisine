@@ -1,95 +1,172 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;600&display=swap');
-.header-div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 80px;
-    border-bottom: solid 2px #f9f9f9;
-}
-
-header {
-    background-image: url("./img/team/team.jpg");
-}
-
-header nav {
-    display: flex;
-    gap: 20px;
-}
-
-header a {
-    text-decoration: none;
-    color: black;
-    opacity: 0.5;
-}
-
-header h1 {
-    font-style: italic;
-    color: #ffff;
-    font-size: 30px;
-}
-
-header img {
-    width: 50px;
-}
-
-.burger {
-    display: none;
-}
-
-.contenant {
-    position: relative;
-    text-align: center;
-    color: #ffff;
-}
-
-.texte_centrer {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2.5rem;
-    font-style: italic;
-}
-
-.texte_centrer span {
-    font-size: 1.5rem;
-}
-
-.contenant img {
-    width: 100%;
-    height: 600px;
-}
-
-
-/* Team Section*/
-
-.team-section {
-    padding: 150px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 25px 0.5em;
-    justify-content: center;
-    align-content: center;
-}
-
-.img-team {
-    border-radius: 50%;
-    width: 35%;
-}
-
-.team-section h2 {
-    font-style: italic;
-    font-weight: 400;
-    font-size: 30px;
-}
-
-.team-section p {
-    opacity: 0.50;
-}
-
-
-/*  @media (max-width: 768px) {
-       
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;600&display=swap');
+    .header-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 80px;
+        border-bottom: solid 2px #f9f9f9;
+    }
+    
+    header {
+        background-image: radial-gradient( rgb(49, 49, 49), rgba(2, 2, 3, 0.5)), url("img/team/team.jpg");
+    }
+    
+    header nav {
+        display: flex;
+        gap: 20px;
+    }
+    
+    header a {
+        text-decoration: none;
+        color: #f9f9f9;
+        opacity: 0.6;
+    }
+    
+    header h1 {
+        font-style: italic;
+        color: #ffff;
+        font-size: 30px;
+    }
+    
+    header img {
+        width: 50px;
+    }
+    
+    .burger {
+        display: none;
+    }
+    
+    .contenant {
+        position: relative;
+        text-align: center;
+        color: #ffff;
+    }
+    
+    .texte_centrer {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2.5rem;
+        font-style: italic;
+    }
+    
+    .texte_centrer span {
+        font-size: 1.5rem;
+    }
+    
+    .contenant img {
+        width: 100%;
+        height: 600px;
+    }
+    /* Team Section*/
+    
+    .team-section {
+        padding: 150px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px 0.5em;
+        /*justify-content: center;*/
+        align-content: center;
+        position: relative;
+    }
+    
+    .img-team {
+        border-radius: 50%;
+        width: 35%;
+    }
+    
+    .team-section h2 {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 30px;
+    }
+    
+    .team-section p {
+        opacity: 0.50;
+    }
+    /* Research bar*/
+    
+    .fformulaire {
+        flex-direction: column;
+    }
+    
+    .bouton {
+        width: 200px;
+        height: 35px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    
+    .nav-bar i {
+        width: 35px;
+        padding-top: 10px;
+    }
+    
+    .nav-bar {
+        font-style: italic;
+        font-weight: 400;
+        position: absolute;
+        top: 90%;
+        left: 80%;
+    }
+    
+    .nav-bar h3 {
+        padding-bottom: 10px;
+    }
+    
+    #myEmail {
+        width: 192px;
+        height: 35px;
+    }
+    
+    #mySearch {
+        width: 200px;
+        height: 35px;
+    }
+    /* footer*/
+    
+    .footer-main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15%;
+    }
+    
+    footer {
+        background-color: black;
+        color: #ffff;
+    }
+    
+    footer p {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    
+    footer h3 {
+        font-style: italic;
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+    
+    footer li {
+        padding: 5px;
+        text-decoration: underline;
+    }
+    
+    .button {
+        width: 100px;
+        height: 40px;
+        text-align: center;
+        margin-bottom: 25px;
+        background-color: black;
+        color: #ffff;
+        border: 1px solid rgba(191, 191, 191, 0.963);
+    }
+    
+    @media (max-width: 768px) {
         header {
             position: relative;
         }
@@ -103,9 +180,51 @@ header img {
             top: calc(50% - 20px);
             right: 10px;
         }
-        .covers {
-            display: block;
-            padding-bottom: 200px;
-            background-size: 500px;
+        .nav-bar {
+            display: none;
         }
-    }*/
+        .texte_centrer {
+            font-size: 23px;
+        }
+        .texte_centrer span {
+            font-size: 17px;
+        }
+        .contenant img {
+            height: 50%;
+        }
+        .footer-main {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .team-section {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+        }
+    }
+    
+    @media (max-width: 992px) {
+        header {
+            position: relative;
+        }
+        header nav {
+            display: none;
+        }
+        .nav-bar {
+            display: none;
+        }
+        .burger {
+            display: block;
+            width: 30px;
+            position: absolute;
+            top: calc(50% - 20px);
+            right: 10px;
+        }
+        .team-section {
+            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 90px 6em;
+            width: 90%;
+        }
+    }
