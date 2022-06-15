@@ -1,48 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@400;700&display=swap');
-font-family: 'Courgette', cursive;
-font-family: 'Oswald', sans-serif;
-
-body{
+    @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@400;700&display=swap');
+font-family: 'Courgette',
+cursive;
+font-family: 'Oswald',
+sans-serif;
+body {
     display: flex;
     font-family: 'Oswald', sans-serif;
 }
-header{
+
+header {
     display: flex;
     flex-direction: column;
     color: white;
     background-image: radial-gradient( rgb(49, 49, 49), rgba(2, 2, 3, 0.5)), url("img/recipes/paella/paella-header.jpg");
 
 }
-.title{
+
+.title {
     border: 1px solid rgb(69, 69, 69);
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
 }
+<<<<<<< HEAD
 h1{
+=======
+
+.title img {
+    backgroun
+}
+
+h1 {
+>>>>>>> 9692a9308e2facdee4b654a995d4b90f3b1a8585
     font-family: 'Courgette', cursive;
     font-size: 30px;
 }
-.presentation p{
+
+.presentation p {
     font-family: 'Courgette', cursive;
     font-size: 20px;
 }
-.presentation{
+
+.presentation {
     text-align: center;
     margin: 150px 40px;
 }
-h2{
+
+h2 {
     font-family: 'Courgette', cursive;
     font-size: 50px;
 }
+
+
 /* Main */
-nav{
+
+nav {
     display: none;
 }
-aside{
+
+aside {
     display: none;
 }
-.buttons{
+
+.buttons {
     background-color: #4d4d4d;
     border-radius: 20px;
     border: none;
@@ -50,28 +70,33 @@ aside{
     text-align: center;
     height: 40px;
 }
-main{
+
+main {
     font-family: 'Oswald', sans-serif;
     display: flex;
     flex-direction: column;
     padding: 40px 10px;
 }
-.articles{
+
+.articles {
     text-align: justify;
     padding: 30px 5px;
     line-height: 180%;
 }
-h3{
+
+h3 {
     font-family: 'Courgette', cursive;
     font-size: 30px;
     font-weight: bolder;
     padding: 10px 0px;
 }
-h4{
-    font-family: 'Courgette', cursive;    
+
+h4 {
+    font-family: 'Courgette', cursive;
     font-size: 20px;
 }
-.pics{
+
+.pics {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,20 +104,24 @@ h4{
     padding-top: 10%;
     align-items: center;
 }
-.titrearticle{
+
+.titrearticle {
     display: flex;
     justify-content: space-between;
     text-align: center;
     padding-bottom: 20px;
 }
-.titrearticle p{
+
+.titrearticle p {
     background-color: rgb(202, 201, 199);
 }
-.step{
+
+.step {
     padding-top: 25px;
 }
-footer{
-    font-family: 'Oswald', sans-serif;    
+
+footer {
+    font-family: 'Oswald', sans-serif;
     display: flex;
     background-color: black;
     color: white;
@@ -102,31 +131,44 @@ footer{
     font-size: 20px;
     line-height: 150%;
 }
-.linkfooter{
+
+.linkfooter {
     color: white;
 }
-.social{
+
+.social {
     filter: invert(100%);
 }
-h5{
+
+h5 {
     font-family: 'Courgette', cursive;
     font-weight: bold;
 }
-h6{
-    font-family: 'Courgette', cursive;    
+
+h6 {
+    font-family: 'Courgette', cursive;
 }
-@media (min-width: 778px){
-    header nav{
+
+@media (min-width: 778px) {
+    header nav {
         display: none;
     }
+<<<<<<< HEAD
     h3{
+=======
+    .dessert {
+        flex-direction: row;
+    }
+    h3 {
+>>>>>>> 9692a9308e2facdee4b654a995d4b90f3b1a8585
         font-size: 30px;
     }
-    footer{
+    footer {
         flex-direction: row;
         justify-content: space-between;
         padding: 60px 80px 180px 80px;
     }
+<<<<<<< HEAD
     .pics{
         flex-direction: row;
     }
@@ -178,3 +220,57 @@ h6{
         display: block;
     }
 }
+=======
+    @media (min-width: 992px) {
+        .title img {
+            display: none;
+        }
+        main {
+            flex-direction: row;
+        }
+        .articles {
+            display: flex;
+            flex-wrap: wrap;
+            width: calc(100%-200px);
+            padding-left: 150px;
+        }
+        aside {
+            display: block;
+            width: 200px;
+            padding: 30px 20px;
+        }
+        .titrearticle {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 30px 20px;
+        }
+        .ingredients {
+            width: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+        .step {
+            flex: 1;
+            padding: 30px 20px;
+        }
+        .pics {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        header nav {
+            display: block;
+            padding-top: 8px;
+        }
+        .title a {
+            color: white;
+            text-decoration: none;
+        }
+        .post {}
+        .abo {
+            display: block;
+        }
+    }
+>>>>>>> 9692a9308e2facdee4b654a995d4b90f3b1a8585
