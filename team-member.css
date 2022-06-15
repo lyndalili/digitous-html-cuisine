@@ -217,7 +217,7 @@
         .team-section {
             flex-wrap: wrap;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             gap: 90px 6em;
             width: 90%;
         }
