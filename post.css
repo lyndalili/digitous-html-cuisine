@@ -69,10 +69,12 @@ h3{
     border-top: 1px solid rgb(211, 211, 211);
     padding: 30px 0px;
     line-height: 160%;
+    flex: 1;
 }
 .auteur img{
     border-radius: 50%;
     padding-right: 20px;
+    width: 200px;
 }
 h6{
     font-family: 'Courgette', cursive;
@@ -115,8 +117,7 @@ h4{
     flex-direction: row;
 }
 .notice img{
-    padding: 5px 20px;
-    width: 10%;
+    padding: 15px 20px;   
 }
 .haters{
     justify-content: center;
@@ -137,7 +138,10 @@ h4{
     }
     header nav{
         display: block;
-        padding-top: 8px;
+        text-align: center;
+        padding-top: 3%;
+        word-spacing: 5px;
+        opacity: 40%;
     }
     .title a{
         color: white;
