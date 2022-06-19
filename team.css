@@ -1,231 +1,125 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;600&display=swap');
-.header-div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 80px;
-    border-bottom: solid 2px #f9f9f9;
-}
-
-header {
-    background-image: url("./img/team/team.jpg");
-}
-
-header nav {
-    display: flex;
-    gap: 20px;
-}
-
-header a {
-    text-decoration: none;
-    color: #f9f9f9;
-    opacity: 0.6;
-}
-
-header h1 {
-    font-style: italic;
-    color: #ffff;
-    font-size: 30px;
-}
-
-header img {
-    width: 50px;
-}
-
-.burger {
-    display: none;
-}
-
-.contenant {
-    position: relative;
-    text-align: center;
-    color: #ffff;
-}
-
-.texte_centrer {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2.5rem;
-    font-style: italic;
-}
-
-.texte_centrer span {
-    font-size: 1.5rem;
-}
-
-.contenant img {
-    width: 100%;
-    height: 600px;
-}
-
-
-/* Team Section*/
-
-.floated {
-    border-radius: 50%;
-    width: 200px;
-    float: left;
-    margin: 20px;
-}
-
-.team-section {
-    padding-left: 10%;
-}
-
-.team-section p {
-    font-size: 15px;
-    opacity: 0.6;
-    padding-right: 300px;
-    line-height: 1.7em;
-    width: 66%;
-    height: 25%;
-}
-
-
-/* Research bar*/
-
-.formulaire {
-    flex-direction: column;
-}
-
-.bouton {
-    width: 150px;
-    height: 35px;
-    text-align: center;
-}
-
-.nav-bar i {
-    width: 35px;
-}
-
-.nav-bar {
-    font-style: italic;
-    font-weight: 400;
-    position: absolute;
-    top: 90%;
-    left: 80%;
-}
-
-#myEmail {
-    width: 150px;
-    height: 35px;
-}
-
-#mySearch {
-    width: 150px;
-    height: 35px;
-}
-
-
-/* footer*/
-
-.footer-main {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 15%;
-}
-
-footer {
-    background-color: black;
-    color: #ffff;
-}
-
-footer p {
-    font-style: italic;
-    font-weight: 400;
-    font-size: 25px;
-    margin-bottom: 20px;
-}
-
-footer h3 {
-    font-style: italic;
-    font-weight: 400;
-    margin-bottom: 5px;
-}
-
-footer li {
-    padding: 5px;
-    text-decoration: underline;
-}
-
-.button {
-    width: 100px;
-    height: 40px;
-    text-align: center;
-    margin-bottom: 25px;
-    background-color: black;
-    color: #ffff;
-    border: 1px solid rgba(191, 191, 191, 0.963);
-}
-
-footer i {
-    background-color: #f9f9f9;
-    color: black;
-    padding: 9px;
-}
-
-@media (max-width: 768px) {
-    header {
-        position: relative;
+    .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url("img/team/team.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
-    header nav {
-        display: none;
+    /* Team Section*/
+    
+    .team-container {
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 24px;
     }
-    .burger {
-        display: block;
-        width: 30px;
-        position: absolute;
-        top: calc(50% - 20px);
-        right: 10px;
+    
+    .team-container article {
+        width: 250px;
+        text-align: center;
+        margin-bottom: 32px;
     }
-    .nav-bar {
-        display: none;
-    }
-    .texte_centrer {
-        font-size: 23px;
-    }
-    .texte_centrer span {
-        font-size: 17px;
-    }
-    .contenant img {
-        height: 50%;
-    }
-    .footer-main {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .floated {
+    
+    .team-container article img {
+        width: 220px;
         border-radius: 50%;
-        width: 150px;
-        float: left;
     }
-    .team-section p {
-        font-size: 15px;
-        opacity: 0.6;
-        line-height: 1.7em;
-        width: 90%;
-        height: 25%;
+    
+    .team-container h4 {
+        font-family: 'Courgette', sans-serif;
+        font-size: 32px;
+        margin-top: 16px;
+        margin-bottom: 16px;
     }
-}
-
-@media (max-width: 992px) {
-    header {
-        position: relative;
+    
+    .team-container p {
+        font-weight: 200;
     }
-    header nav {
-        display: none;
+    /* Research bar*/
+    
+    .fformulaire {
+        flex-direction: column;
     }
+    
+    .bouton {
+        width: 200px;
+        height: 35px;
+        text-align: center;
+    }
+    
+    .nav-bar i {
+        width: 35px;
+    }
+    
     .nav-bar {
-        display: none;
+        font-style: italic;
+        font-weight: 400;
     }
-    .burger {
-        display: block;
-        width: 30px;
-        position: absolute;
-        top: calc(50% - 20px);
-        right: 10px;
+    
+    #myEmail {
+        width: 187px;
+        height: 35px;
     }
-}
+    
+    #mySearch {
+        width: 200px;
+        height: 35px;
+    }
+    /* footer*/
+    
+    .footer-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10%;
+    }
+    
+    footer {
+        background-color: black;
+        color: #ffff;
+    }
+    
+    footer p {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    
+    footer h3 {
+        font-style: italic;
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+    
+    footer li {
+        padding: 5px;
+        text-decoration: underline;
+    }
+    
+    .button {
+        width: 100px;
+        height: 40px;
+        text-align: center;
+        margin-bottom: 25px;
+        background-color: black;
+        color: #ffff;
+        border: 1px solid rgba(191, 191, 191, 0.963);
+    }
+    
+    @media (max-width: 992px) {
+        .team-section {
+            justify-content: center;
+        }
+    }
+    
+    @media(max-width: 768px) {
+        .footer-main {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 30px;
+        }
+        .team-section {
+            padding-left: 25%;
+        }
+    }

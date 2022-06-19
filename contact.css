@@ -1,240 +1,171 @@
-            @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;600&display=swap');
-            header {
-                display: flex;
-                flex-direction: column;
-                color: white;
-                background-repeat: no-repeat;
-                background-position: center;
-                background-image: radial-gradient( rgb(49, 49, 49), rgba(2, 2, 3, 0.5)), url("img/header.jpg");
-            }
-            
-            .header-div {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 20px 80px;
-                border-bottom: solid 2px #f9f9f9;
-            }
-            
-            header nav {
-                display: flex;
-                gap: 20px;
-            }
-            
-            header a {
-                text-decoration: none;
-                color: #f9f9f9;
-                opacity: 0.6;
-            }
-            /*section container header img*/
-            
-            .container-header {
-                text-align: center;
-                padding: 80px 0px 150px 0px;
-            }
-            
-            .container-header p {
-                font-size: 30px;
-                font-style: italic;
-                color: #ffff;
-            }
-            
-            .burger {
-                display: none;
-            }
-            
-            .test {
-                width: 100%;
-                height: 600px;
-            }
-            
-            .texte_centrer {
-                position: absolute;
-                top: 15%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-            
-            .texte_centrer span {
-                font-size: 3rem;
-                font-weight: bold;
-                font-style: italic;
-            }
-            /* section contact*/
-            
-            section h1 {
-                font-style: italic;
-                font-weight: 400;
-                font-size: 38px;
-            }
-            
-            .section-contact h2 {
-                font-style: italic;
-                font-weight: 400;
-                font-size: 25px;
-                padding-left: 30px;
-            }
-            
-            .p-contact {
-                opacity: 0.6;
-                line-height: 1rem;
-                padding-left: 30px;
-            }
-            /* Research bar*/
-            
-            .formulaire {
-                flex-direction: column;
-            }
-            
-            .bouton {
-                width: 150px;
-                height: 30px;
-                text-align: center;
-            }
-            
-            .nav-bar i {
-                width: 35px;
-            }
-            
-            .nav-bar {
-                font-style: italic;
-                font-weight: 400;
-                position: absolute;
-                top: 72%;
-                left: 75%;
-            }
-            
-            .nav-bar h3 {
-                padding-bottom: 10px;
-            }
-            
-            #myEmail {
-                width: 150px;
-                height: 30px;
-            }
-            
-            #mySearch {
-                width: 150px;
-                height: 30px;
-            }
-            /* section maps*/
-            
-            .section-maps {
-                padding-left: 100px;
-            }
-            /* footer*/
-            
-            .footer-main {
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                padding: 15%;
-            }
-            
-            footer {
-                background-color: black;
-                color: #ffff;
-            }
-            
-            footer p {
-                font-style: italic;
-                font-weight: 400;
-                font-size: 25px;
-                margin-bottom: 20px;
-            }
-            
-            footer h3 {
-                font-style: italic;
-                font-weight: 400;
-                margin-bottom: 5px;
-            }
-            
-            footer li {
-                padding: 5px;
-                text-decoration: underline;
-            }
-            
-            .map-responsive {
-                overflow: hidden;
-                padding-bottom: 56.25%;
-                position: relative;
-                height: 0;
-            }
-            
-            .map-responsive iframe {
-                left: 25px;
-                top: 0;
-                height: 60%;
-                width: 65%;
-                position: absolute;
-            }
-            
-            .button {
-                width: 100px;
-                height: 40px;
-                text-align: center;
-                margin-bottom: 25px;
-                background-color: black;
-                color: #ffff;
-                border: 1px solid rgba(191, 191, 191, 0.963);
-            }
-            
-            @media (max-width: 768px) {
-                header {
-                    position: relative;
-                }
-                header nav {
-                    display: none;
-                }
-                .burger {
-                    display: block;
-                    width: 40px;
-                    position: absolute;
-                    top: calc(50% - 20px);
-                    right: 10px;
-                }
-                .nav-bar {
-                    display: none;
-                }
-                .texte_centrer {
-                    font-size: 23px;
-                }
-                .texte_centrer span {
-                    font-size: 17px;
-                }
-                .footer-main {
-                    flex-direction: column;
-                    align-items: flex-start;
-                }
-                .team-section {
-                    display: flex;
-                    flex-direction: column;
-                    width: 90%;
-                }
-            }
-            
-            @media (max-width: 992px) {
-                header {
-                    position: relative;
-                }
-                header nav {
-                    display: none;
-                }
-                .nav-bar {
-                    display: none;
-                }
-                .burger {
-                    display: block;
-                    width: 30px;
-                    position: absolute;
-                    top: calc(50% - 20px);
-                    right: 10px;
-                }
-                .team-section {
-                    flex-wrap: wrap;
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    gap: 90px 6em;
-                    width: 90%;
-                }
-            }
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url("img/header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* section contact*/
+
+.address-container {
+    flex: 1;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+h3 {
+    font-family: 'Courgette', sans-serif;
+    font-size: 24px;
+    display: block;
+}
+
+address {
+    margin-top: 16px;
+    margin-left: 32px;
+    margin-bottom: 16px;
+}
+
+address p {
+    color: grey;
+    line-height: 40px;
+}
+
+
+/* Research bar*/
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 50px 0px;
+}
+
+.formulaire {
+    flex-direction: column;
+}
+
+.bouton {
+    width: 150px;
+    height: 30px;
+    text-align: center;
+}
+
+.nav-bar i {
+    width: 40px;
+}
+
+.nav-bar {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.nav-bar h3 {
+    font-style: italic;
+    font-size: 18px;
+    font-family: 'Courgette', sans-serif;
+    font-size: 17px;
+    margin-top: 16px;
+}
+
+#myEmail {
+    width: 150px;
+    height: 30px;
+}
+
+#mySearch {
+    width: 150px;
+    height: 30px;
+}
+
+footer i {
+    background-color: #f9f9f9;
+    color: black;
+    padding: 9px;
+}
+
+
+/* footer*/
+
+.footer-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15%;
+}
+
+footer {
+    background-color: black;
+    color: #ffff;
+}
+
+footer p {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+footer h3 {
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+footer li {
+    padding: 5px;
+    text-decoration: underline;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 25px;
+    top: 0;
+    height: 60%;
+    width: 65%;
+    position: absolute;
+}
+
+.button {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 25px;
+    background-color: black;
+    color: #ffff;
+    border: 1px solid rgba(191, 191, 191, 0.963);
+}
+
+footer i {
+    background-color: #f9f9f9;
+    color: black;
+    padding: 9px;
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        display: none;
+    }
+    .footer-main {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .team-section {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-bar {
+        display: none;
+    }
+}

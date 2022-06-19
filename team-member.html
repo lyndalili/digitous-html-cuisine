@@ -5,122 +5,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="team-member.css">
-
+    <title>Cui'zine</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="team-member.css">
     <script src="https://kit.fontawesome.com/395d2606a5.js" crossorigin="anonymous"></script>
 
 </head>
 
-
-
-
-
 <body>
 
     <header>
-
-        <!-- Header -->
-        <div class="header-div">
-            <h1>Cui'zine</h1>
-            <nav>
-                <a href="#">Accueil</a>
-                <a href="#">Equipe</a>
-                <a href="#">Blog</a>
-                <a href="#">Contact</a>
-            </nav>
-            <img class="burger" src="./img/burger.png" />
-        </div>
-
-        <!-- Covers -->
+        <h1>Cui'zine</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="team.html" class="selected">Equipe</a>
+            <a href="post.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <img class="burger" src="./img/burger.png" alt="Burger menu" />
 
     </header>
 
+    <main>
+        <section class="hero hero-dark">
 
-    <section>
-        <div class="contenant">
-            <img src="img/team/team.jpg" alt="">
-            <div class="texte_centrer">
-                <p>On apprend en enseignant <br> <span>Un pour tous et tous pour un</span> </p>
+            <div>
+                <h1>Antoine</h1>
+                <h2>Gouteur professionnel</h2>
             </div>
-        </div>
-    </section>
-
-    <!-- Team -->
-    <section>
+        </section>
 
         <div class="team-section">
 
-            <div>
-                <img class="img-team" src="img/team/tony.jpg" alt="">
-                <h2>Tony</h2>
-                <p>Rédacteur en chef</p>
+            <section class="team-member-container">
+                <img class="floated " src="img/team/antoine.jpg " alt=" ">
 
-            </div>
-            <div>
-                <img class="img-team" src="img/team/clementine.jpg" alt="">
-                <h2>Clémentine</h2>
-                <p>Journaliste culunaire</p>
 
-            </div>
+                <p>Antoine, né à London, en Ontario, a été élevé dans une famille mormone. Son père est d'origine canadien-français. Il se destine d'abord à une carrière de danseur avant d'être engagé en 1993, à l'âge de 12 ans, sur The Mickey Mouse Club
+                    (All New Mickey Mouse Club) aux côtés de Britney Spears, Christina Aguilera et Justin Timberlake.
+                    <p>
+                        <p>À la suite de ses débuts d'acteur en 1991, Antoine enchaîne quelques apparitions à la télévision dans des séries canadiennes et américaines, puis endosse le rôle d'Hercule dans la série Hercule contre Arès (Young Hercules) de 1998
+                            à 1999.</p>
+                        <p>En 2001, il apparaît pour la première fois sur grand écran dans le film de Boaz Yakin, produit par Jerry Bruckheimer, Le Plus Beau des combats (Remember the Titans) où il interprète un jeune joueur de football américain dans la
+                            première équipe scolaire de Virginie accueillant des noirs, Les Titans. La même année, Antoine obtient le rôle d'un néo-nazi juif dans Danny Balint (The Believer) de Henry Bean, le film remporte le « Grand Prix du Jury » au
+                            festival du film de Sundance et le « St. George d'or » au festival international du film de Moscou.</p>
+                        <p>De 2002 à 2004, il interprète surtout des rôles de jeunes gens tourmentés : un meurtrier perfide et sûr de lui face à Sandra Bullock dans Calculs meurtriers (Murder by Numbers) de Barbet Schroeder puis un adolescent énigmatique
+                            et fascinant dans The United States of Leland de Matthew Ryan Hoge, aux côtés de Don Cheadle. Le film sera présenté au Festival de Deauville et au Festival de Sundance en 2003. Il a également participé au film d'Andrew J. Smith,
+                            The Slaughter Rule en 2002, où David Morse l'entraîne dans son équipe de six-man football, un dérivé brutal du football américain.</p>
+                        <p>En 2004, Antoine tourne ensuite sous la direction de Nick Cassavetes dans N'oublie jamais (The Notebook) avec Rachel McAdams, un drame romantique sur l'amour éternel à travers la maladie d'Alzheimer, qui leur vaudra de nombreux
+                            prix du public aux Teen Choice Awards, et le MTV Movie Award du meilleur baiser. La même année, le New York Times parle de lui comme l'un des nouveaux talents en vue du cinéma américain.</p>
+                        <p>Également compositeur, musicien et chanteur, il participe à la composition de la bande originale du film Wild Roomies d'Oliver Robins en 2004.</p>
+                    </p>
+            </section>
 
-            <div>
-                <img class="img-team" src="img/team/antoine.jpg" alt="">
-                <h2>Antoine</h2>
-                <p>gouteur profesionnel</p>
-
-            </div>
-            <div>
-                <img class="img-team " src="img/team/tony.jpg" alt="">
-                <h2>Tony</h2>
-                <p>Rédacteur en chef</p>
-
-            </div>
-            <div>
-                <img class="img-team" src="img/team/clementine.jpg" alt="">
-                <h2>Clémentine</h2>
-                <p>Journaliste culunaire</p>
-
-            </div>
-
-            <div>
-                <img class="img-team" src="img/team/antoine.jpg" alt="">
-                <h2>Antoine</h2>
-                <p>gouteur profesionnel</p>
-
-            </div>
-
+            <aside class="nav-bar">
+                <section class="team-container">
+                    <div>
+                        <h3>Recherche</h3>
+                        <form action="" class="formulaire">
+                            <input type="search" id="mySearch" name="q" placeholder="Recherche..." required size="20" minlength="4" maxlength="10">
+                        </form>
+                        <input class="bouton" type="button" value=" Ok" />
+                    </div>
+                    <div>
+                        <h3>Newletter</h3>
+                        <form action="" class="formulaire">
+                            <input type="email" id="myEmail" name="q" placeholder="Email..." required size="20" minlength="4" maxlength="10">
+                        </form>
+                        <input class="bouton" type="button" value=" S'inscrire" />
+                    </div>
+                    <div>
+                        <h3>Partager</h3>
+                        <i class="fab fa-twitter fa-fw"></i>
+                        <i class="fab fa-linkedin-in fa-fw"></i>
+                        <i class="fab fa-product-hunt fa-fw"></i>
+                        <i class="far fa-envelope fa-fw"></i>
+                    </div>
+            </aside>
         </div>
+    </main>
 
 
 
-        <article class="nav-bar">
-            <div>
-                <h3>Recherche</h3>
-                <form action="" class="formulaire">
-                    <input type="search" id="mySearch" name="q" placeholder="Recherche..." required size="20" minlength="4" maxlength="10">
-                </form>
-                <input class="bouton" type="button" value=" Ok" />
-            </div>
-            <div>
-                <h3>Newletter</h3>
-                <form action="" class="formulaire">
-                    <input type="email" id="myEmail" name="q" placeholder="Email..." required size="20" minlength="4" maxlength="10">
-                </form>
-                <input class="bouton" type="button" value=" S'inscrire" />
-            </div>
-            <div>
-                <h3>Partager</h3>
-                <i class="fab fa-twitter fa-fw"></i>
-                <i class="fab fa-linkedin-in fa-fw"></i>
-                <i class="fab fa-product-hunt fa-fw"></i>
-                <i class="far fa-envelope fa-fw"></i>
-            </div>
 
-        </article>
 
-    </section>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -149,14 +129,14 @@
                 <h3>Newletter</h3>
                 <form action="" class="">
                     <input type="email" id="myEmail" name="q" placeholder="Email..." required size="20" minlength="4" maxlength="10">
-                    <input class="button" type="button" value=" S'inscrire" />
+                    <input class="button" type="button" value=" S'inscrire " />
                 </form>
 
                 <h3>Partager</h3>
-                <i class="fab fa-twitter fa-fw"></i>
-                <i class="fab fa-linkedin-in fa-fw"></i>
-                <i class="fab fa-product-hunt fa-fw"></i>
-                <i class="far fa-envelope fa-fw"></i>
+                <i class="fab fa-twitter fa-fw "></i>
+                <i class="fab fa-linkedin-in fa-fw "></i>
+                <i class="fab fa-product-hunt fa-fw "></i>
+                <i class="far fa-envelope fa-fw "></i>
             </div>
         </div>
     </footer>
