@@ -1,8 +1,9 @@
-    @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@400;700&display=swap');
-font-family: 'Courgette',
-cursive;
-font-family: 'Oswald',
-sans-serif;
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@200&display=swap');
+</style>
+font-family: 'Courgette', cursive;
+font-family: 'Oswald', sans-serif;
+
 body {
     display: flex;
     font-family: 'Oswald', sans-serif;
@@ -22,16 +23,7 @@ header {
     justify-content: space-between;
     padding: 10px 20px;
 }
-<<<<<<< HEAD
 h1{
-=======
-
-.title img {
-    backgroun
-}
-
-h1 {
->>>>>>> 9692a9308e2facdee4b654a995d4b90f3b1a8585
     font-family: 'Courgette', cursive;
     font-size: 30px;
 }
@@ -61,7 +53,6 @@ nav {
 aside {
     display: none;
 }
-
 .buttons {
     background-color: #4d4d4d;
     border-radius: 20px;
@@ -81,7 +72,7 @@ main {
 .articles {
     text-align: justify;
     padding: 30px 5px;
-    line-height: 180%;
+    line-height: 130%;
 }
 
 h3 {
@@ -153,14 +144,7 @@ h6 {
     header nav {
         display: none;
     }
-<<<<<<< HEAD
     h3{
-=======
-    .dessert {
-        flex-direction: row;
-    }
-    h3 {
->>>>>>> 9692a9308e2facdee4b654a995d4b90f3b1a8585
         font-size: 30px;
     }
     footer {
@@ -168,7 +152,6 @@ h6 {
         justify-content: space-between;
         padding: 60px 80px 180px 80px;
     }
-<<<<<<< HEAD
     .pics{
         flex-direction: row;
     }
@@ -183,18 +166,22 @@ h6 {
         display: flex;
         flex-wrap: wrap;
         width: calc(100%-200px);
-        padding-left: 150px;
+        padding-left: 80px;
     }
     aside{
         display: block;
         width: 200px;
         padding: 30px 20px;
     }
+    .abo button{
+        background-color: #ffffff;
+        border: 1px solid black;
+    }
     .titrearticle{
         display: flex;
         justify-content: space-between;
         width: 100%;
-        padding: 30px 20px;
+        padding: 10px 20px;
     }
     .ingredients{
         width: 200px;
@@ -203,7 +190,7 @@ h6 {
     }
     .step{
         flex: 1;
-        padding: 30px 20px;
+        padding: 10px 20px;
     }
     header nav{
         display: block;
@@ -220,57 +207,3 @@ h6 {
         display: block;
     }
 }
-=======
-    @media (min-width: 992px) {
-        .title img {
-            display: none;
-        }
-        main {
-            flex-direction: row;
-        }
-        .articles {
-            display: flex;
-            flex-wrap: wrap;
-            width: calc(100%-200px);
-            padding-left: 150px;
-        }
-        aside {
-            display: block;
-            width: 200px;
-            padding: 30px 20px;
-        }
-        .titrearticle {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            padding: 30px 20px;
-        }
-        .ingredients {
-            width: 200px;
-            display: flex;
-            flex-wrap: wrap;
-            padding: 30px;
-        }
-        .step {
-            flex: 1;
-            padding: 30px 20px;
-        }
-        .pics {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-        }
-        header nav {
-            display: block;
-            padding-top: 8px;
-        }
-        .title a {
-            color: white;
-            text-decoration: none;
-        }
-        .post {}
-        .abo {
-            display: block;
-        }
-    }
->>>>>>> 9692a9308e2facdee4b654a995d4b90f3b1a8585
